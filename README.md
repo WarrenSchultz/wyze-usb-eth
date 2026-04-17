@@ -52,6 +52,14 @@ Using this project can potentially expose your device to the open internet depen
 
 #### Visit the [Installation & Setup](https://github.com/gtxaspec/wz_mini_hacks/wiki/Setup-&-Installation) section of the [Wiki](https://github.com/gtxaspec/wz_mini_hacks/wiki) for details!
 
+## Recompilation Notes
+
+Most day-to-day changes in this repo are text-only (for example `wz_mini.conf` and `etc/init.d/` scripts), so no recompilation is required. Copy the updated files to the SD card and reboot.
+
+`generate_checksum.sh` only refreshes release checksum metadata (`file.chk`/`app.ver`) and does not compile binaries.
+
+Kernel modules in `SD_ROOT/wz_mini/lib/modules/` are prebuilt (`.ko`). Recompilation is only needed if you choose to replace or rebuild those modules yourself with an external toolchain.
+
 ## HELP! SOMETHING DOESN'T DOESN'T WORK
 
 * If you need assistance, or have general questions, feel free to visit the [Discussions](https://github.com/gtxaspec/wz_mini_hacks/discussions) area!  There are folks always willing to help out.
